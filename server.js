@@ -52,7 +52,7 @@ app.post('/webhook', middleware(config), (req, res) => {
             "actions": [
               
                 {
-                  "type": "message",
+                  "type": "uri",
                   "label": "ISNE",
                   "uri": "https://cpe.eng.cmu.ac.th/2013/"
                 },
