@@ -28,11 +28,11 @@ app.post('/webhook', middleware(config), (req, res) => {
         type: 'text',
         text: message.type // change from msg to msg.text
       });
-      else {
-        type: "sticker",
-        packageId: "11539",
-        stickerId: "52114112"
-}
+      {
+        "type": "sticker",
+        "packageId": "11539",
+        "stickerId": "52114112"
+      };
 
     }
 })
