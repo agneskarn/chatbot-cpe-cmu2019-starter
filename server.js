@@ -12,7 +12,7 @@ const config = {
 
 const client = new Client(config)
 
-app.get('/', function (req, res) {
+app.get('/', function (req, res) { 
     res.send('Hello World!!')
 
 })
@@ -26,9 +26,13 @@ app.post('/webhook', middleware(config), (req, res) => {
     console.log(message)
     client.replyMessage(event.replyToken, { // reply msg
         type: 'text',
-        text: message.tpte // change from msg to msg.text
-
+        text: message.type // change from msg to msg.text
       });
+      else {
+        type: "sticker",
+        packageId: "11539",
+        stickerId: "52114112"
+}
 
     }
 })
