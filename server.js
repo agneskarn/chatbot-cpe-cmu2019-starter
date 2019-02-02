@@ -83,8 +83,7 @@ app.post('/webhook', middleware(config), (req, res) => {
   }
 })  
 
-    }
-})
+    
 
 app.set('port', (process.env.PORT || 4000))
 
