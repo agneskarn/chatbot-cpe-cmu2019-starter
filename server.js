@@ -27,12 +27,12 @@ app.post('/webhook', middleware(config), (req, res) => {
     client.replyMessage(event.replyToken, { // reply msg
         type: 'text',
         text: message.type // change from msg to msg.text
-      });
-      {
-        "type": "sticker",
-        "packageId": "11539",
-        "stickerId": "52114112"
-      };
+        type: "sticker",
+        packageId: "11539",
+        stickerId: "52114112"
+      
+    });
+      
 
     }
 })
