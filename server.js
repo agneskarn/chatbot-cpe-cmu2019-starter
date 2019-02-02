@@ -38,7 +38,7 @@ app.post('/webhook', middleware(config), (req, res) => {
         "altText": "This is a buttons template",
         "template": {
             "type": "buttons",
-            "thumbnailImageUrl": "http://3.bp.blogspot.com/_Y8A7lRkpP78/TAejrGmJaJI/AAAAAAAAASg/jko_QhaKm98/s1600/golden+retriever+pup.jpg",
+            "thumbnailImageUrl": "https://previews.123rf.com/images/hugofelix/hugofelix1308/hugofelix130800220/21447093-studio-photo-of-a-baby-golden-retriever-isolated-over-a-white-background.jpg",
             "imageAspectRatio": "rectangle",
             "imageSize": "cover",
             "imageBackgroundColor": "#E9A0EA",
