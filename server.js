@@ -25,8 +25,8 @@ app.post('/webhook', middleware(config), (req, res) => {
     const message = event.message; // keep msg
     console.log(message)
     client.replyMessage(event.replyToken, { // reply msg
-        type: 'text',
-        text: message.type // change from msg to msg.text
+        //type: 'text',
+        //text: message.type // change from msg to msg.text
         type: "sticker",
         packageId: "11539",
         stickerId: "52114112"
