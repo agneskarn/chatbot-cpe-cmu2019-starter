@@ -38,7 +38,7 @@ app.post('/webhook', middleware(config), (req, res) => {
         "altText": "This is a buttons template",
         "template": {
             "type": "buttons",
-            "thumbnailImageUrl": "https://previews.123rf.com/images/hugofelix/hugofelix1308/hugofelix130800220/21447093-studio-photo-of-a-baby-golden-retriever-isolated-over-a-white-background.jpg",
+            "thumbnailImageUrl": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rF63UXPMWj3otndy6/videoblocks-abstract-stained-background-seamless-video-cute-pastel-color_s9ucq9tiz_thumbnail-full01.png",
             "imageAspectRatio": "rectangle",
             "imageSize": "cover",
             "imageBackgroundColor": "#E9A0EA",
@@ -50,20 +50,16 @@ app.post('/webhook', middleware(config), (req, res) => {
                 "uri": "http://google.com/"
             },
             "actions": [
-                {
-                  "type": "postback",
-                  "label": "Buy",
-                  "data": "action=buy&itemid=123"
-                },
+              
                 {
                   "type": "message",
-                  "label": "Add to cart",
-                  "text": "no no no"
+                  "label": "ISNE",
+                  "uri": "https://cpe.eng.cmu.ac.th/2013/"
                 },
                 {
                   "type": "uri",
-                  "label": "View detail",
-                  "uri": "http://google.com"
+                  "label": "Facebook",
+                  "uri": "http://facebook.com/agneskarn"
                 }
             ]
         }
