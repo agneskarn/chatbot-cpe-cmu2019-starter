@@ -23,7 +23,7 @@ app.post('/webhook', middleware(config), (req, res) => {
 
   if (event.type === 'message') {
     const message = event.message; // keep msg
-
+    console.log(message)
     client.replyMessage(event.replyToken, { // reply msg
         type: 'text',
         text: message.text // change from msg to msg.text
