@@ -32,38 +32,56 @@ app.post('/webhook', middleware(config), (req, res) => {
         stickerId: "52114112"
       
     }); */
-    client.replyMessage(event.replyToken, 
-      {
+   client.replyMessage(event.replyToken, {
         "type": "template",
-        "altText": "This is a buttons template",
+        "altText": "this is a carousel template",
         "template": {
-            "type": "buttons",
-            "thumbnailImageUrl": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rF63UXPMWj3otndy6/videoblocks-abstract-stained-background-seamless-video-cute-pastel-color_s9ucq9tiz_thumbnail-full01.png",
-            "imageAspectRatio": "rectangle",
-            "imageSize": "cover",
-            "imageBackgroundColor": "#E9A0EA",
-            "title": "Karn",
-            "text": "Thanaphat Inkum",
-            "defaultAction": {
-                "type": "uri",
-                "label": "View detail",
-                "uri": "http://google.com/"
-            },
-            "actions": [
-              
+            "type": "carousel",
+            "columns": [
                 {
-                  "type": "uri",
-                  "label": "ISNE",
-                  "uri": "https://cpe.eng.cmu.ac.th/2013/"
+                  "thumbnailImageUrl": "https://vignette.wikia.nocookie.net/line/images/b/bb/2015-brown.png/revision/latest?cb=20150808131630",
+                  "imageBackgroundColor": "#FFFFFF",
+                  "title": "this is menu",
+                  "text": "description",
+                  "actions": [
+                      {  
+                          "type":"cameraRoll",
+                          "label":"Camera roll"
+                      },
+                      {  
+                        "type":"location",
+                        "label":"Location"
+                     }
+                  ]
                 },
                 {
-                  "type": "uri",
-                  "label": "Facebook",
-                  "uri": "http://facebook.com/agneskarn"
+                  "thumbnailImageUrl": "https://c.76.my/Malaysia/line-brown-bear-cute-pencil-case-ubiyo-1802-02-Ubiyo@6.jpg",
+                  "imageBackgroundColor": "#000000",
+                  "title": "this is menu",
+                  "text": "description",
+                  "actions": [
+                    {
+                      "type":"datetimepicker",
+                      "label":"Select date",
+                      "data":"storeId=12345",
+                      "mode":"datetime",
+                      "initial":"2017-12-25t00:00",
+                      "max":"2018-01-24t23:59",
+                      "min":"2017-12-25t00:00"
+                    },
+                    {  
+                      "type":"camera",
+                      "label":"Camera"
+                   }
+                ]
                 }
-            ]
+            ],
+            "imageAspectRatio": "rectangle",
+            "imageSize": "cover"
         }
-      })   
+    })
+  }
+})  
 
     }
 })
