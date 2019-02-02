@@ -43,7 +43,7 @@ app.post('/webhook', middleware(config), (req, res) => {
             "imageSize": "cover",
             "imageBackgroundColor": "#E9A0EA",
             "title": "Karn",
-            "text": "Please select",
+            "text": "Thanaphat Inkum",
             "defaultAction": {
                 "type": "uri",
                 "label": "View detail",
