@@ -26,7 +26,7 @@ app.post('/webhook', middleware(config), (req, res) => {
 
     client.replyMessage(event.replyToken, { // reply msg
         type: 'text',
-        text: message, //ส่งอะไรมาส่งกลับมาแบบเดิม
+        text: message.text // change from msg to msg.text
       });
 
     }
